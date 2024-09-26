@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <form method="get">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" pattern="[A-Za-z\d\.]{6,12}" title="Username must be between 6 and 12 characters in length and contain only letters, numbers and periods(.)" >
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input type="text" name="passwword" id="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\d]).{8,16}" title="Must contain uppercase and lowercase and at least one number and 8 or more characters" >
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" pattern="[a-z\d.]+@(gmail|yahoo|outlook)\.(com|in|co|org|gov)"title="Enter a valid email that must include gamil,yahoo,outlook, domain ending with .com,.in,.co,.org,.gov" required>
+        <br>
+        <br>
+        <label for="gender">Gender</label>
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="male" >
+        <label for="female">Female</label>
+        <input type="radio" name="female" id="female" >
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
