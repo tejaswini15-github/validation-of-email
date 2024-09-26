@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+
+<body>  
+  <form action="./form4.html" method="get">
+    <center><h1>Login Page</h1></center>
+    <br>
+    <label for="username">USERNAME:</label>
+    <input type="text" name="Username" id="Username" pattern="[A-Za-z\d\.]{6,12}" title="Username must be between 6 and 12 characters in length and contain only letters, numbers and periods(.)" required>
+    <br>  
+    <br>
+    <label for="password">PASSWORD:</label>
+    <input type="text" name="password" id="password"  pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\d]).{8,16}" title="Must contain uppercase and lowercase and at least one number and 8 or more characters" required>
+    <br>
+    <br>
+    <input type="submit" value="login">
+    <br>
+    <br>
+    <a href="./form4.html">
+        <button type="button">Forgot</button>
+    </a>    
+    <br>
+    <br> 
+    <a href="./FORM 3.html">    
+      <button type="button">Register</button>
+    </a>
+  </form>
+</body>
+</html>
